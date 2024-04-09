@@ -4,6 +4,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// Axios configuration (e.g., in index.js or a separate file)
+import axios from 'axios';
+
+axios.defaults.baseURL = 'http://localhost:8000/api/';  // Django API base URL
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
